@@ -46,7 +46,7 @@ nev_print_mesh_nodes (FILE * file, struct PRINT Print, struct NODES Nodes,
 
   ut_print_message (0, 4,
                     "Number of nodes        reduced by %3.0f%% (to %d).\n",
-                    100 * (double) hidden[0] / (double) node_qty,
+                    100 * (double) hidden[0] / node_qty,
                     node_qty - hidden[0]);
 
   return;
