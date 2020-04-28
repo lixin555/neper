@@ -186,8 +186,6 @@ neut_ori_fscanf (FILE *file, char *desconv, double **q, int qty)
   double *tmp = ut_alloc_1d (9);
   char *des = NULL, *conv = NULL;
 
-  ut_file_skip (file, 1);
-
   status = neut_ori_expr_desconv (desconv, &des, &conv);
   if (status)
     ut_print_exprbug (desconv);
